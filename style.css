@@ -137,3 +137,49 @@ font-family: 'Spline Sans', sans-serif;
 /* Mission style ends */
 
 
+/*  Commitment section */
+.about{
+    margin-top: 5rem;
+}
+.about__container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.img__part{
+    width: 400px;
+    margin-right: 20px;
+    position: relative;
+}
+.img__part::after{
+    content: '';
+    background: url(./images/shapes/shape-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: absolute;
+    top: 20%;
+    left: -3.5rem;
+    height: 50%;
+    width: 100%;
+}
+.img__part > img{
+    width: 100%;
+    object-fit: cover;
+}
+.text__part{
+    width: max-content;
+    margin-left: 2rem;
+    text-align: justify;
+}
+.text__part > h3{
+    font-size: 40px;
+    line-height: 4rem;
+}
+.text__part > p{
+    font-size: 18px;
+    line-height: 1.7rem;
+    margin-bottom: 30px;
+}
+/*  Commitment section ends  */
+
