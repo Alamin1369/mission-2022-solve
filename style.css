@@ -7,6 +7,7 @@ font-family: 'Spline Sans', sans-serif;
  */
 
  /* global styles */
+
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +39,10 @@ a{
     box-shadow: inset -1px -1px 28px rgb(182, 0, 0);
 }
 /* global style ends  */
+
+
 /* header styles */
+
 .header{
     height: 500px;
 }
@@ -80,6 +84,7 @@ a{
     line-height: 1.8rem;
     margin-bottom: 10px;
 }
+
 /* header style ends */
 
 
@@ -136,13 +141,13 @@ a{
 
 
 /*  Commitment section */
+
 .about{
     margin-top: 5rem;
 }
 .commitment__container{
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
 }
 .img__part{
     width: 400px;
@@ -179,10 +184,12 @@ a{
     line-height: 1.7rem;
     margin-bottom: 30px;
 }
+
 /*  Commitment section ends  */
 
 
 /*  Environment section   */
+
 .enviroment{
     margin-top: 3rem;
 }
@@ -202,6 +209,7 @@ a{
 
 
 /* Skill To Be Acquired section  */
+
 .skltba{
     margin-top: 6rem;
     text-align: justify;
@@ -221,7 +229,7 @@ a{
     list-style: none;
     color:#ff4f58
 }
-ul li {
+.skills > li {
     font-size: 20px;
     text-align: right;
     background-color: #ffd9db ;
@@ -230,9 +238,7 @@ ul li {
     padding: 7px;
     cursor: pointer;
 }
-.skills__illustration{
 
-}
 /* Skill To Be Acquired section ends  */
 
 /* footer */
@@ -252,3 +258,6 @@ footer > p{
     margin-top: 20px;
     font-family: 'Roboto Mono', monospace;
 }
+
+
+/* ends  */
