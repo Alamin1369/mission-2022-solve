@@ -5,20 +5,42 @@ font-family: 'Great Vibes', cursive;
 font-family: 'Roboto Mono', monospace;
 font-family: 'Spline Sans', sans-serif;
  */
+
+ /* global styles */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Spline Sans', sans-serif;
     text-transform: capitalize;
 }
-/* header styles */
-.header{
-    height: 500px;
+a{
+    color: currentColor;
+    text-decoration: none;
 }
-
+.span__color{
+    font-family: 'Roboto Mono', monospace;
+    color: #ff4f58;
+}
 .gap{
     width: 75vw;
     margin: auto;
+}
+.main__btn{
+    padding: 12px 28px;
+    background-color: #ff4f58;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset -1px -1px 28px rgb(182, 0, 0);
+}
+/* global style ends  */
+/* header styles */
+.header{
+    height: 500px;
 }
 
 .header__container{
@@ -28,8 +50,6 @@ font-family: 'Spline Sans', sans-serif;
     height: 100%;
     width: 100%;
 }
-
-
 .right{
     width: 50%;
     display: flex;
@@ -38,8 +58,6 @@ font-family: 'Spline Sans', sans-serif;
 .right > img{
     height: 500px;
 }
-
-
 .left{
     width: 50%;
 }
@@ -62,26 +80,6 @@ font-family: 'Spline Sans', sans-serif;
     line-height: 1.8rem;
     margin-bottom: 10px;
 }
-
-.span__color{
-    font-family: 'Roboto Mono', monospace;
-    color: #ff4f58;
-}
-
-
-.main__btn{
-    padding: 12px 28px;
-    background-color: #ff4f58;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: inset -1px -1px 28px rgb(182, 0, 0);
-}
-
 /* header style ends */
 
 
@@ -141,7 +139,7 @@ font-family: 'Spline Sans', sans-serif;
 .about{
     margin-top: 5rem;
 }
-.about__container{
+.commitment__container{
     display: flex;
     align-items: center;
     /* justify-content: space-evenly; */
@@ -165,10 +163,10 @@ font-family: 'Spline Sans', sans-serif;
 }
 .img__part > img{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .text__part{
-    width: max-content;
+    width: 50%;
     margin-left: 2rem;
     text-align: justify;
 }
@@ -183,3 +181,74 @@ font-family: 'Spline Sans', sans-serif;
 }
 /*  Commitment section ends  */
 
+
+/*  Environment section   */
+.enviroment{
+    margin-top: 3rem;
+}
+.enviroment__container{
+    display: flex;
+}
+.enviroment__container > .text__part{
+    margin-right: 20px;
+    position: relative;
+}
+.enviroment__container > .img__part::after{
+    top: 16.5rem;
+    left: 16.6rem;
+    width: 89%;
+}
+/* Environment section ends  */
+
+
+/* Skill To Be Acquired section  */
+.skltba{
+    margin-top: 6rem;
+    text-align: justify;
+}
+.skltba__main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+.skltba__container > h1{
+    text-align: center;
+    font-size: 60px;
+}
+.skills{
+    list-style: none;
+    color:#ff4f58
+}
+ul li {
+    font-size: 20px;
+    text-align: right;
+    background-color: #ffd9db ;
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+.skills__illustration{
+
+}
+/* Skill To Be Acquired section ends  */
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    margin: 6rem 0 0 0;
+    padding: 4rem;
+    text-align: center;
+}
+footer h1{
+    font-size: 33px;
+    font-family: 'Great Vibes', cursive;
+}
+footer > p{
+    margin-top: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
